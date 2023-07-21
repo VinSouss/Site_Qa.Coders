@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230707 11:27:34.175" rpa="false" schemaversion="3">
+<suite id="s1" name="Parceiros Test" source="C:\Users\vinso\workspace\QaCoders\automacao-qacoders\test\parceiros_test.robot">
+<test id="s1-t1" name="Caso de teste 04 - Acesso a área de &quot;Parceiros&quot;" line="8">
+<kw name="Abrir o navegador" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 11:27:34.457" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230707 11:27:34.456" endtime="20230707 11:27:35.767"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230707 11:27:35.767" endtime="20230707 11:27:35.889"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:34.456" endtime="20230707 11:27:35.890"/>
+</kw>
+<kw name="Acessar a área &quot;Parceiros&quot; da página" library="keywords" sourcename="Acessar a área &quot;${ABA}&quot; da página">
+<kw name="Acessar a home page do site qacoders.com.br" library="keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230707 11:27:35.890" level="INFO">Opening url 'https://www.qacoders.com.br/'</msg>
+<status status="PASS" starttime="20230707 11:27:35.890" endtime="20230707 11:27:38.579"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[text()="Qualidade é uma Cultura."]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:27:38.579" endtime="20230707 11:27:38.613"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:35.890" endtime="20230707 11:27:38.613"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'${ABA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:27:38.613" level="INFO">Clicking element '//a[contains(.,'Parceiros')]'.</msg>
+<status status="PASS" starttime="20230707 11:27:38.613" endtime="20230707 11:27:38.689"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:35.890" endtime="20230707 11:27:38.689"/>
+</kw>
+<kw name="Verificar se está na área &quot;Parceiros&quot;" library="keywords" sourcename="Verificar se está na área &quot;${ÁREA}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230707 11:27:40.691" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230707 11:27:38.690" endtime="20230707 11:27:40.691"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>text=${ÁREA}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230707 11:27:40.691" endtime="20230707 11:27:40.702"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:38.690" endtime="20230707 11:27:40.703"/>
+</kw>
+<kw name="Fechar o navegador" library="keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230707 11:27:40.848" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230707 11:27:40.703" endtime="20230707 11:27:40.848"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230707 11:27:40.848" endtime="20230707 11:27:43.064"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:40.703" endtime="20230707 11:27:43.065"/>
+</kw>
+<doc>Esse teste verifica e valida o acesso da área de "Parceiros" da página do Qa.Coders</doc>
+<tag>parceiros</tag>
+<status status="PASS" starttime="20230707 11:27:34.455" endtime="20230707 11:27:43.065"/>
+</test>
+<test id="s1-t2" name="Caso de teste 05 - Acesso ao Parceiro &quot;Soluevo&quot;" line="15">
+<kw name="Abrir o navegador" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 11:27:43.066" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230707 11:27:43.066" endtime="20230707 11:27:44.248"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230707 11:27:44.248" endtime="20230707 11:27:44.370"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:43.066" endtime="20230707 11:27:44.370"/>
+</kw>
+<kw name="Acessar a área &quot;Parceiros&quot; da página" library="keywords" sourcename="Acessar a área &quot;${ABA}&quot; da página">
+<kw name="Acessar a home page do site qacoders.com.br" library="keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230707 11:27:44.371" level="INFO">Opening url 'https://www.qacoders.com.br/'</msg>
+<status status="PASS" starttime="20230707 11:27:44.371" endtime="20230707 11:27:46.658"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[text()="Qualidade é uma Cultura."]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:27:46.658" endtime="20230707 11:27:46.689"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:44.371" endtime="20230707 11:27:46.689"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'${ABA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:27:46.690" level="INFO">Clicking element '//a[contains(.,'Parceiros')]'.</msg>
+<status status="PASS" starttime="20230707 11:27:46.689" endtime="20230707 11:27:46.765"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:44.371" endtime="20230707 11:27:46.765"/>
+</kw>
+<kw name="Clicar no Parceiro &quot;Soluevo&quot;" library="keywords" sourcename="Clicar no Parceiro &quot;${EMPRESA}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230707 11:27:48.766" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230707 11:27:46.766" endtime="20230707 11:27:48.766"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'${EMPRESA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:27:48.767" level="INFO">Clicking element '//img[contains(@alt,'Soluevo')]'.</msg>
+<status status="PASS" starttime="20230707 11:27:48.766" endtime="20230707 11:27:50.801"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:46.766" endtime="20230707 11:27:50.801"/>
+</kw>
+<kw name="Verificar se aparece a frase &quot;Desenvolvimento mobile&quot;" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//span[text()="Desenvolvimento mobile"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:27:50.803" endtime="20230707 11:27:50.838"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:50.801" endtime="20230707 11:27:50.838"/>
+</kw>
+<kw name="Fechar o navegador" library="keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230707 11:27:51.197" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230707 11:27:50.839" endtime="20230707 11:27:51.197"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230707 11:27:51.197" endtime="20230707 11:27:53.344"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:50.838" endtime="20230707 11:27:53.344"/>
+</kw>
+<doc>Esse teste verifica e valida se o acesso ao parceiro "Soluevo" está sendo feito de forma correta</doc>
+<tag>parceiro_soluevo</tag>
+<status status="PASS" starttime="20230707 11:27:43.065" endtime="20230707 11:27:53.345"/>
+</test>
+<test id="s1-t3" name="Caso de teste 06 - Acesso ao Parceiro &quot;FaculdadeVincit&quot;" line="23">
+<kw name="Abrir o navegador" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 11:27:53.346" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230707 11:27:53.346" endtime="20230707 11:27:54.530"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230707 11:27:54.530" endtime="20230707 11:27:54.650"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:53.345" endtime="20230707 11:27:54.650"/>
+</kw>
+<kw name="Acessar a área &quot;Parceiros&quot; da página" library="keywords" sourcename="Acessar a área &quot;${ABA}&quot; da página">
+<kw name="Acessar a home page do site qacoders.com.br" library="keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230707 11:27:54.651" level="INFO">Opening url 'https://www.qacoders.com.br/'</msg>
+<status status="PASS" starttime="20230707 11:27:54.651" endtime="20230707 11:27:57.315"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[text()="Qualidade é uma Cultura."]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:27:57.315" endtime="20230707 11:27:57.345"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:54.651" endtime="20230707 11:27:57.346"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'${ABA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:27:57.346" level="INFO">Clicking element '//a[contains(.,'Parceiros')]'.</msg>
+<status status="PASS" starttime="20230707 11:27:57.346" endtime="20230707 11:27:57.420"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:54.650" endtime="20230707 11:27:57.420"/>
+</kw>
+<kw name="Clicar no Parceiro &quot;Vincit&quot;" library="keywords" sourcename="Clicar no Parceiro &quot;${EMPRESA}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230707 11:27:59.422" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230707 11:27:57.421" endtime="20230707 11:27:59.422"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'${EMPRESA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:27:59.422" level="INFO">Clicking element '//img[contains(@alt,'Vincit')]'.</msg>
+<status status="PASS" starttime="20230707 11:27:59.422" endtime="20230707 11:27:59.715"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:57.420" endtime="20230707 11:27:59.715"/>
+</kw>
+<kw name="Verificar se está na Homepage do site do Parceiro FaculdadeVincit" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//*[@id="img_comp-kod6qwwj"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:27:59.715" endtime="20230707 11:28:01.768"/>
+</kw>
+<status status="PASS" starttime="20230707 11:27:59.715" endtime="20230707 11:28:01.769"/>
+</kw>
+<kw name="Fechar o navegador" library="keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230707 11:28:02.078" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230707 11:28:01.769" endtime="20230707 11:28:02.078"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230707 11:28:02.078" endtime="20230707 11:28:04.231"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:01.769" endtime="20230707 11:28:04.231"/>
+</kw>
+<doc>Esse teste verifica e valida se o acesso ao parceiro "FaculdadeVincit" está sendo feito de forma correta</doc>
+<tag>parceiro_faculdadeVincit</tag>
+<status status="PASS" starttime="20230707 11:27:53.345" endtime="20230707 11:28:04.232"/>
+</test>
+<test id="s1-t4" name="Caso de teste 07 - Acesso ao Parceiro &quot;Brightest&quot;" line="30">
+<kw name="Abrir o navegador" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 11:28:04.233" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230707 11:28:04.233" endtime="20230707 11:28:05.449"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230707 11:28:05.449" endtime="20230707 11:28:05.563"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:04.232" endtime="20230707 11:28:05.564"/>
+</kw>
+<kw name="Acessar a área &quot;Parceiros&quot; da página" library="keywords" sourcename="Acessar a área &quot;${ABA}&quot; da página">
+<kw name="Acessar a home page do site qacoders.com.br" library="keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230707 11:28:05.565" level="INFO">Opening url 'https://www.qacoders.com.br/'</msg>
+<status status="PASS" starttime="20230707 11:28:05.565" endtime="20230707 11:28:07.315"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[text()="Qualidade é uma Cultura."]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:28:07.315" endtime="20230707 11:28:07.347"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:05.564" endtime="20230707 11:28:07.347"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'${ABA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:07.347" level="INFO">Clicking element '//a[contains(.,'Parceiros')]'.</msg>
+<status status="PASS" starttime="20230707 11:28:07.347" endtime="20230707 11:28:07.435"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:05.564" endtime="20230707 11:28:07.436"/>
+</kw>
+<kw name="Clicar no Parceiro &quot;Brightest&quot;" library="keywords" sourcename="Clicar no Parceiro &quot;${EMPRESA}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230707 11:28:09.437" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230707 11:28:07.436" endtime="20230707 11:28:09.437"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'${EMPRESA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:09.438" level="INFO">Clicking element '//img[contains(@alt,'Brightest')]'.</msg>
+<status status="PASS" starttime="20230707 11:28:09.437" endtime="20230707 11:28:15.429"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:07.436" endtime="20230707 11:28:15.429"/>
+</kw>
+<kw name="Verificar se no titulo da página aparece &quot;BRIGHTEST - your partner for IT certifications&quot;" library="keywords" sourcename="Verificar se no titulo da página aparece &quot;${TITLE}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230707 11:28:15.435" level="INFO">Page title is 'BRIGHTEST - your partner for IT certifications'.</msg>
+<status status="PASS" starttime="20230707 11:28:15.429" endtime="20230707 11:28:15.435"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:15.429" endtime="20230707 11:28:15.435"/>
+</kw>
+<kw name="Fechar o navegador" library="keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230707 11:28:15.943" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230707 11:28:15.435" endtime="20230707 11:28:15.943"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230707 11:28:15.943" endtime="20230707 11:28:18.124"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:15.435" endtime="20230707 11:28:18.124"/>
+</kw>
+<doc>Esse teste verifica e valida se o acesso ao parceiro "Brightest" está sendo feito de forma correta</doc>
+<tag>parceiros_brightest</tag>
+<status status="PASS" starttime="20230707 11:28:04.232" endtime="20230707 11:28:18.124"/>
+</test>
+<test id="s1-t5" name="Caso de teste 08 - Acesso ao Parceiro &quot;SimplesmenteUse&quot;" line="38">
+<kw name="Abrir o navegador" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 11:28:18.125" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230707 11:28:18.125" endtime="20230707 11:28:19.431"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230707 11:28:19.431" endtime="20230707 11:28:19.551"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:18.125" endtime="20230707 11:28:19.551"/>
+</kw>
+<kw name="Acessar a área &quot;Parceiros&quot; da página" library="keywords" sourcename="Acessar a área &quot;${ABA}&quot; da página">
+<kw name="Acessar a home page do site qacoders.com.br" library="keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230707 11:28:19.552" level="INFO">Opening url 'https://www.qacoders.com.br/'</msg>
+<status status="PASS" starttime="20230707 11:28:19.552" endtime="20230707 11:28:21.355"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[text()="Qualidade é uma Cultura."]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:28:21.356" endtime="20230707 11:28:21.384"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:19.552" endtime="20230707 11:28:21.385"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'${ABA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:21.385" level="INFO">Clicking element '//a[contains(.,'Parceiros')]'.</msg>
+<status status="PASS" starttime="20230707 11:28:21.385" endtime="20230707 11:28:21.459"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:19.551" endtime="20230707 11:28:21.459"/>
+</kw>
+<kw name="Clicar no Parceiro &quot;SimplesmenteUse&quot;" library="keywords" sourcename="Clicar no Parceiro &quot;${EMPRESA}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230707 11:28:23.460" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230707 11:28:21.460" endtime="20230707 11:28:23.460"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'${EMPRESA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:23.460" level="INFO">Clicking element '//img[contains(@alt,'SimplesmenteUse')]'.</msg>
+<status status="PASS" starttime="20230707 11:28:23.460" endtime="20230707 11:28:29.042"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:21.459" endtime="20230707 11:28:29.043"/>
+</kw>
+<kw name="Verificar se no titulo da página aparece &quot;Home - SimplesmenteUse&quot;" library="keywords" sourcename="Verificar se no titulo da página aparece &quot;${TITLE}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230707 11:28:29.050" level="INFO">Page title is 'Home - SimplesmenteUse'.</msg>
+<status status="PASS" starttime="20230707 11:28:29.043" endtime="20230707 11:28:29.050"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:29.043" endtime="20230707 11:28:29.050"/>
+</kw>
+<kw name="Fechar o navegador" library="keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230707 11:28:29.587" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230707 11:28:29.051" endtime="20230707 11:28:29.587"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230707 11:28:29.587" endtime="20230707 11:28:31.734"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:29.050" endtime="20230707 11:28:31.734"/>
+</kw>
+<doc>Esse teste verifica e valida se o acesso ao parceiro "SimplesmenteUse" está sendo feito de forma correta</doc>
+<tag>parceiros_simplismenteUse</tag>
+<status status="PASS" starttime="20230707 11:28:18.124" endtime="20230707 11:28:31.734"/>
+</test>
+<test id="s1-t6" name="Caso de teste 09 - Acesso ao Parceiro &quot;Libelle&quot;" line="46">
+<kw name="Abrir o navegador" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 11:28:31.735" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230707 11:28:31.735" endtime="20230707 11:28:32.931"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230707 11:28:32.931" endtime="20230707 11:28:33.057"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:31.734" endtime="20230707 11:28:33.057"/>
+</kw>
+<kw name="Acessar a área &quot;Parceiros&quot; da página" library="keywords" sourcename="Acessar a área &quot;${ABA}&quot; da página">
+<kw name="Acessar a home page do site qacoders.com.br" library="keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230707 11:28:33.058" level="INFO">Opening url 'https://www.qacoders.com.br/'</msg>
+<status status="PASS" starttime="20230707 11:28:33.058" endtime="20230707 11:28:34.826"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[text()="Qualidade é uma Cultura."]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:28:34.826" endtime="20230707 11:28:34.852"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:33.058" endtime="20230707 11:28:34.852"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'${ABA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:34.853" level="INFO">Clicking element '//a[contains(.,'Parceiros')]'.</msg>
+<status status="PASS" starttime="20230707 11:28:34.852" endtime="20230707 11:28:34.924"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:33.058" endtime="20230707 11:28:34.924"/>
+</kw>
+<kw name="Clicar no Parceiro &quot;Libelle&quot;" library="keywords" sourcename="Clicar no Parceiro &quot;${EMPRESA}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230707 11:28:36.926" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230707 11:28:34.925" endtime="20230707 11:28:36.926"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'${EMPRESA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:36.926" level="INFO">Clicking element '//img[contains(@alt,'Libelle')]'.</msg>
+<status status="PASS" starttime="20230707 11:28:36.926" endtime="20230707 11:28:38.266"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:34.924" endtime="20230707 11:28:38.266"/>
+</kw>
+<kw name="Verificar se foi redirecionoado para página da Libelle no LinkedIn" library="keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=//*[@id="organization_guest_contextual-sign-in"]/div/section/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:38.267" level="INFO">Clicking button '//*[@id="organization_guest_contextual-sign-in"]/div/section/button'.</msg>
+<status status="PASS" starttime="20230707 11:28:38.266" endtime="20230707 11:28:38.500"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[contains(.,'Libelle')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:28:38.501" endtime="20230707 11:28:38.529"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:38.266" endtime="20230707 11:28:38.529"/>
+</kw>
+<kw name="Fechar o navegador" library="keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230707 11:28:38.694" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230707 11:28:38.529" endtime="20230707 11:28:38.694"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230707 11:28:38.694" endtime="20230707 11:28:40.833"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:38.529" endtime="20230707 11:28:40.834"/>
+</kw>
+<doc>Esse teste verifica e valida se o acesso ao parceiro "Libelle" está sendo feito de forma correta</doc>
+<tag>parceiros_libelle</tag>
+<status status="PASS" starttime="20230707 11:28:31.734" endtime="20230707 11:28:40.834"/>
+</test>
+<test id="s1-t7" name="Caso de teste 10 - Acesso ao Parceiro &quot;Lovepeople&quot;" line="54">
+<kw name="Abrir o navegador" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 11:28:40.835" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230707 11:28:40.835" endtime="20230707 11:28:42.048"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230707 11:28:42.048" endtime="20230707 11:28:42.169"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:40.834" endtime="20230707 11:28:42.169"/>
+</kw>
+<kw name="Acessar a área &quot;Parceiros&quot; da página" library="keywords" sourcename="Acessar a área &quot;${ABA}&quot; da página">
+<kw name="Acessar a home page do site qacoders.com.br" library="keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230707 11:28:42.170" level="INFO">Opening url 'https://www.qacoders.com.br/'</msg>
+<status status="PASS" starttime="20230707 11:28:42.170" endtime="20230707 11:28:44.045"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[text()="Qualidade é uma Cultura."]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:28:44.046" endtime="20230707 11:28:44.073"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:42.170" endtime="20230707 11:28:44.073"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'${ABA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:44.074" level="INFO">Clicking element '//a[contains(.,'Parceiros')]'.</msg>
+<status status="PASS" starttime="20230707 11:28:44.073" endtime="20230707 11:28:44.145"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:42.169" endtime="20230707 11:28:44.146"/>
+</kw>
+<kw name="Clicar no Parceiro &quot;Lovepeople&quot;" library="keywords" sourcename="Clicar no Parceiro &quot;${EMPRESA}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230707 11:28:46.147" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230707 11:28:44.147" endtime="20230707 11:28:46.147"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'${EMPRESA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:46.147" level="INFO">Clicking element '//img[contains(@alt,'Lovepeople')]'.</msg>
+<status status="PASS" starttime="20230707 11:28:46.147" endtime="20230707 11:28:47.986"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:44.146" endtime="20230707 11:28:47.986"/>
+</kw>
+<kw name="Verificar se no titulo da página aparece &quot;curso Flutter + turmas abertas | lovepeople&quot;" library="keywords" sourcename="Verificar se no titulo da página aparece &quot;${TITLE}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230707 11:28:47.996" level="INFO">Page title is 'curso Flutter + turmas abertas | lovepeople'.</msg>
+<status status="PASS" starttime="20230707 11:28:47.987" endtime="20230707 11:28:47.996"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:47.986" endtime="20230707 11:28:47.996"/>
+</kw>
+<kw name="Fechar o navegador" library="keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230707 11:28:48.531" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230707 11:28:47.996" endtime="20230707 11:28:48.531"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230707 11:28:48.531" endtime="20230707 11:28:50.690"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:47.996" endtime="20230707 11:28:50.690"/>
+</kw>
+<doc>Esse teste verifica e valida se o acesso ao parceiro "Lovepeople" está sendo feito de forma correta</doc>
+<tag>parceiros_lovepeople</tag>
+<status status="PASS" starttime="20230707 11:28:40.834" endtime="20230707 11:28:50.690"/>
+</test>
+<test id="s1-t8" name="Caso de teste 11 - Acesso ao Parceiro &quot;Valtech&quot;" line="62">
+<kw name="Abrir o navegador" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 11:28:50.691" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230707 11:28:50.691" endtime="20230707 11:28:51.819"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230707 11:28:51.819" endtime="20230707 11:28:51.945"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:50.691" endtime="20230707 11:28:51.946"/>
+</kw>
+<kw name="Acessar a área &quot;Parceiros&quot; da página" library="keywords" sourcename="Acessar a área &quot;${ABA}&quot; da página">
+<kw name="Acessar a home page do site qacoders.com.br" library="keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230707 11:28:51.946" level="INFO">Opening url 'https://www.qacoders.com.br/'</msg>
+<status status="PASS" starttime="20230707 11:28:51.946" endtime="20230707 11:28:54.510"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[text()="Qualidade é uma Cultura."]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:28:54.510" endtime="20230707 11:28:54.540"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:51.946" endtime="20230707 11:28:54.541"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'${ABA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:54.541" level="INFO">Clicking element '//a[contains(.,'Parceiros')]'.</msg>
+<status status="PASS" starttime="20230707 11:28:54.541" endtime="20230707 11:28:54.617"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:51.946" endtime="20230707 11:28:54.617"/>
+</kw>
+<kw name="Clicar no Parceiro &quot;Valtech&quot;" library="keywords" sourcename="Clicar no Parceiro &quot;${EMPRESA}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230707 11:28:56.618" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230707 11:28:54.618" endtime="20230707 11:28:56.618"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'${EMPRESA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:28:56.619" level="INFO">Clicking element '//img[contains(@alt,'Valtech')]'.</msg>
+<status status="PASS" starttime="20230707 11:28:56.618" endtime="20230707 11:29:00.407"/>
+</kw>
+<status status="PASS" starttime="20230707 11:28:54.618" endtime="20230707 11:29:00.408"/>
+</kw>
+<kw name="Verificar se no titulo da página aparece &quot;Agência digital focada em tecnologia e inovação&quot;" library="keywords" sourcename="Verificar se no titulo da página aparece &quot;${TITLE}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230707 11:29:00.424" level="INFO">Page title is 'Agência digital focada em tecnologia e inovação'.</msg>
+<status status="PASS" starttime="20230707 11:29:00.408" endtime="20230707 11:29:00.424"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:00.408" endtime="20230707 11:29:00.424"/>
+</kw>
+<kw name="Fechar o navegador" library="keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230707 11:29:00.780" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230707 11:29:00.424" endtime="20230707 11:29:00.780"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230707 11:29:00.780" endtime="20230707 11:29:02.999"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:00.424" endtime="20230707 11:29:03.000"/>
+</kw>
+<doc>Esse teste verifica e valida se o acesso ao parceiro "Valtech" está sendo feito de forma correta</doc>
+<tag>parceiros_valtech</tag>
+<status status="PASS" starttime="20230707 11:28:50.690" endtime="20230707 11:29:03.000"/>
+</test>
+<test id="s1-t9" name="Caso de teste 12 - Acesso ao Parceiro &quot;Stackspot&quot;" line="71">
+<kw name="Abrir o navegador" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 11:29:03.001" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230707 11:29:03.001" endtime="20230707 11:29:04.179"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230707 11:29:04.179" endtime="20230707 11:29:04.305"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:03.000" endtime="20230707 11:29:04.305"/>
+</kw>
+<kw name="Acessar a área &quot;Parceiros&quot; da página" library="keywords" sourcename="Acessar a área &quot;${ABA}&quot; da página">
+<kw name="Acessar a home page do site qacoders.com.br" library="keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230707 11:29:04.306" level="INFO">Opening url 'https://www.qacoders.com.br/'</msg>
+<status status="PASS" starttime="20230707 11:29:04.306" endtime="20230707 11:29:06.899"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[text()="Qualidade é uma Cultura."]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:29:06.899" endtime="20230707 11:29:06.931"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:04.306" endtime="20230707 11:29:06.931"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'${ABA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:29:06.931" level="INFO">Clicking element '//a[contains(.,'Parceiros')]'.</msg>
+<status status="PASS" starttime="20230707 11:29:06.931" endtime="20230707 11:29:07.011"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:04.305" endtime="20230707 11:29:07.012"/>
+</kw>
+<kw name="Clicar no Parceiro &quot;Stackspot&quot;" library="keywords" sourcename="Clicar no Parceiro &quot;${EMPRESA}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230707 11:29:09.012" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230707 11:29:07.012" endtime="20230707 11:29:09.012"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'${EMPRESA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:29:09.013" level="INFO">Clicking element '//img[contains(@alt,'Stackspot')]'.</msg>
+<status status="PASS" starttime="20230707 11:29:09.012" endtime="20230707 11:29:09.457"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:07.012" endtime="20230707 11:29:09.458"/>
+</kw>
+<kw name="Verificar se no titulo da página aparece &quot;Stackspot&quot;" library="keywords" sourcename="Verificar se no titulo da página aparece &quot;${TITLE}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230707 11:29:10.798" level="INFO">Page title is 'Stackspot'.</msg>
+<status status="PASS" starttime="20230707 11:29:09.458" endtime="20230707 11:29:10.798"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:09.458" endtime="20230707 11:29:10.798"/>
+</kw>
+<kw name="Fechar o navegador" library="keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230707 11:29:11.077" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230707 11:29:10.799" endtime="20230707 11:29:11.077"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230707 11:29:11.078" endtime="20230707 11:29:13.230"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:10.798" endtime="20230707 11:29:13.230"/>
+</kw>
+<doc>Esse teste verifica e valida se o acesso ao parceiro "Stackspot" está sendo feito de forma correta</doc>
+<tag>parceiros_stackSpot</tag>
+<status status="PASS" starttime="20230707 11:29:03.000" endtime="20230707 11:29:13.230"/>
+</test>
+<test id="s1-t10" name="Caso de teste 13 - Acesso ao Parceiro &quot;Prime Control&quot;" line="79">
+<kw name="Abrir o navegador" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 11:29:13.231" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230707 11:29:13.231" endtime="20230707 11:29:14.399"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230707 11:29:14.399" endtime="20230707 11:29:14.521"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:13.230" endtime="20230707 11:29:14.521"/>
+</kw>
+<kw name="Acessar a área &quot;Parceiros&quot; da página" library="keywords" sourcename="Acessar a área &quot;${ABA}&quot; da página">
+<kw name="Acessar a home page do site qacoders.com.br" library="keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230707 11:29:14.523" level="INFO">Opening url 'https://www.qacoders.com.br/'</msg>
+<status status="PASS" starttime="20230707 11:29:14.522" endtime="20230707 11:29:16.258"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h1[text()="Qualidade é uma Cultura."]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 11:29:16.258" endtime="20230707 11:29:16.290"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:14.522" endtime="20230707 11:29:16.290"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'${ABA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:29:16.290" level="INFO">Clicking element '//a[contains(.,'Parceiros')]'.</msg>
+<status status="PASS" starttime="20230707 11:29:16.290" endtime="20230707 11:29:16.362"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:14.522" endtime="20230707 11:29:16.362"/>
+</kw>
+<kw name="Clicar no Parceiro &quot;Prime Control&quot;" library="keywords" sourcename="Clicar no Parceiro &quot;${EMPRESA}&quot;">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230707 11:29:18.363" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230707 11:29:16.363" endtime="20230707 11:29:18.363"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'${EMPRESA}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 11:29:18.363" level="INFO">Clicking element '//img[contains(@alt,'Prime Control')]'.</msg>
+<status status="PASS" starttime="20230707 11:29:18.363" endtime="20230707 11:29:23.761"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:16.362" endtime="20230707 11:29:23.761"/>
+</kw>
+<kw name="Verificar se no titulo da página aparece &quot;Prime Control - Experts em Qualidade Digital&quot;" library="keywords" sourcename="Verificar se no titulo da página aparece &quot;${TITLE}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230707 11:29:23.768" level="INFO">Page title is 'Prime Control - Experts em Qualidade Digital'.</msg>
+<status status="PASS" starttime="20230707 11:29:23.761" endtime="20230707 11:29:23.768"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:23.761" endtime="20230707 11:29:23.768"/>
+</kw>
+<kw name="Fechar o navegador" library="keywords" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230707 11:29:24.291" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230707 11:29:23.768" endtime="20230707 11:29:24.291"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230707 11:29:24.291" endtime="20230707 11:29:26.490"/>
+</kw>
+<status status="PASS" starttime="20230707 11:29:23.768" endtime="20230707 11:29:26.490"/>
+</kw>
+<doc>Esse teste verifica e valida se o acesso ao parceiro "Prime Control" está sendo feito de forma correta</doc>
+<tag>parceiros_primeControl</tag>
+<status status="PASS" starttime="20230707 11:29:13.230" endtime="20230707 11:29:26.490"/>
+</test>
+<doc>Essa suite testa a aba Parceiros do site da Qa.Coders</doc>
+<status status="PASS" starttime="20230707 11:27:34.176" endtime="20230707 11:29:26.491"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">parceiro_faculdadeVincit</stat>
+<stat pass="1" fail="0" skip="0">parceiros</stat>
+<stat pass="1" fail="0" skip="0">parceiros_brightest</stat>
+<stat pass="1" fail="0" skip="0">parceiros_libelle</stat>
+<stat pass="1" fail="0" skip="0">parceiros_lovepeople</stat>
+<stat pass="1" fail="0" skip="0">parceiro_soluevo</stat>
+<stat pass="1" fail="0" skip="0">parceiros_primeControl</stat>
+<stat pass="1" fail="0" skip="0">parceiros_simplismenteUse</stat>
+<stat pass="1" fail="0" skip="0">parceiros_stackSpot</stat>
+<stat pass="1" fail="0" skip="0">parceiros_valtech</stat>
+</tag>
+<suite>
+<stat pass="10" fail="0" skip="0" id="s1" name="Parceiros Test">Parceiros Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
